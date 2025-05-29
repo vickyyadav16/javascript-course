@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>booleans</title>
+</head>
+
+<body>
+
+    <!-- booleans are another type of value
+    - there are only 2 boolean values: true , flase -->
+    <script>
+        true
+        false
+
+        console.log(3 < 5);
+        console.log(3 > 5);
+        console.log(typeof 'true');
+        console.log(typeof true);
+        console.log(5 == '5.00');
+        // '==' give true that's why use '===' operator for equal value and also use this '!==' instead of this '!='
+        console.log(5 === '5.00');
+
+
+        // If-Statements
+        // - lets us write multiple groups of code
+        // - and then decide which code to run
+
+        if(false){
+            console.log('hello');
+        } else{
+            console.log('else');
+        }
+
+        const age = 15
+        if(age >= 16){
+            console.log('you can drive');
+        }else {
+            console.log("you can't drive");
+        }
+
+
+        // AND operator
+        console.log(true && false);
+
+        // or operator
+        console.log(true || false);
+
+        // not operator
+        console.log(!true);
+
+        // truthy and falsy value
+        if(5){
+            console.log('truthy');
+        }
+
+        const cartQuantity = 5;
+
+        if(cartQuantity){
+            console.log('cart has products');
+        }
+
+        console.log(!0);
+
+        console.log('text' / 5);
+
+        let variable1;
+        console.log(variable1);
+
+        // ternary operator
+        true ? 'truthy' : 'falsy'
+
+        const result = true ? 'truthy' : 'falsy';
+        console.log(result);
+
+    </script>
+</body>
+
+</html>
