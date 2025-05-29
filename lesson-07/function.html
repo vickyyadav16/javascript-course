@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+    <!--     
+    what is function?
+    a function lets us reuse code -->
+
+    <!-- result statement -->
+    <!-- - lets us get a value out of a function -->
+
+    <!-- Parameters = put value into a function -->
+    
+    <script>
+        function function1() {
+            console.log('hello');
+            console.log(2 + 2);
+        }
+
+        function1();
+        function1();
+
+        function calculateTax(cost, taxPercent) {
+            console.log(cost * taxPercent);
+        }
+
+        calculateTax(2000, 0.2);
+
+        function calculateTax1(cost, taxPercent = 0.1) {
+            console.log(cost * taxPercent);
+        }
+        calculateTax(5000);
+        
+    </script>
+
+</body>
+
+</html>
