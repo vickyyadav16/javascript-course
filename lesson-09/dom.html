@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <!-- built-in objects(object provided by javascript) -->
+    <!-- example
+      console.log(),
+      Math.random(),
+      JSON.stringify(),
+      localStorage.getItem(),
+      DOM(document object model) = another built-in object 
+      dom = the document object represents/models the webpage.-->
+
+    <button>hello</button>
+    <button class="js-button">Second button</button>
+    <script>
+        console.log(document.title);
+        document.title = 'changed';
+
+        console.log(document.body);
+        console.log(typeof document.body);
+
+        console.log(document.body.innerHTML);
+
+        document.body.innerHTML = 'changes';
+
+        // document.body.innerHTML = '<button>vicky</button>';
+
+        // method = function saved inside an object
+
+        // document.querySelector()
+        // -lets us get any element from the page and put it inside javascript
+
+        // document.body.innerHTML = 'hello';
+        // document.title = 'Good Job!';
+
+        console.log(document.querySelector('button').innerHTML);
+
+        document.querySelector('button')
+            .innerHTML = 'changed';
+
+        console.log(document.querySelector('.js-button'));
+
+        const buttonElement = document.querySelector('.js-button');
+
+        console.log(buttonElement);
+
+        //  DOM combines JS and HTML together it gives JS full control of the webpage
+
+        // clicks,keydowns => Events
+        // onclick, onkeydown => event listeners
+
+    </script>
+</body>
+
+</html>

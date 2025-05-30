@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise?</title>
+</head>
+<body>
+    <!-- <button>vicky</button> -->
+     <button class="heads" onclick="CoinToss('heads')">heads</button>
+     
+     <button class="tails" onclick="CoinToss('tails')">tails</button>
+
+     <p class="result"></p>
+
+     <input placeholder="Name" class="js-text-input" onkeydown="handleTextKeydown(event)">
+
+     <button class="js-submit-button" onclick="namingText();">Submit</button>
+
+     <p class="js-text"></p>
+
+    <script>
+        // document.querySelector('.js-vicky-button').innerHTML = 'yadav';
+
+        // console.log(document.querySelector('button').innerHTML);
+
+        function CoinToss(choice){
+           document.querySelector('.result').innerHTML = `You chose: ${choice}`;
+        };
+
+        function handleTextKeydown(event){
+            if(event.key === 'Enter'){
+                namingText();
+            }
+        };
+
+        function namingText(){
+        const inputText = document.querySelector('.js-text-input');
+
+        let text = inputText.value;
+
+        document.querySelector('.js-text').innerHTML = `Your name is: ${text}`;
+        };
+
+    </script>
+</body>
+</html>
